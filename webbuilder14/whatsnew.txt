@@ -1,0 +1,405 @@
+What is new in WYSIWYG Web Builder 14?
+
+Flex Grid
+- New feature: WB14 introduces a new way of creating flexible layouts based on the new CSS Grid Layout. 
+The CSS grid is a new technique in CSS that allows web developers to create complex responsive web design layouts more easily and consistently across browsers.
+
+'CSS Grid Layout' is a two-dimensional grid system that is native to CSS. It does not rely on floats or other hacks. This result in clean code and reliable code.
+The idea behind the Grid Layout is to divide a webpage into columns and rows. The columns and rows have named areas where you can drag & drop object in. The definition of the layout can be different for each breakpoint.
+Each grid area supports it own padding, (flexbox) alignment, border and background style.
+
+Related tutorials:
+http://www.wysiwygwebbuilder.com/flexgrid_part1.html
+http://www.wysiwygwebbuilder.com/flexgrid_part2.html
+
+Cards
+- New feature: Added 'Card' object. A card is a lightweight, flexible content container. It includes options for headers and footers, a wide variety of content, styling, and powerful display options.
+When used in combination with a flexbox container, multiple cards with different content can have the same height, which normally would be difficult to achieve.
+- New feature: Popovers, this basically uses the Card as an advanced tooltip/pop-up box that appears when the user clicks or hovers on an element.
+
+Related tutorial: http://www.wysiwygwebbuilder.com/cards.html
+
+Google Fonts
+- New feature: Added Google Fonts Manager. Adding Google Fonts to your website has never been easier. You no longer have to manually download/install the fonts from the Google website. 
+
+Icons Fonts
+- New feature: Added support for custom Icon Fonts Libraries. Add your own icon libraries or third party icon sets. Extra Icon Fonts support the same styling options as the built-in Font Awesome.
+Add-on packs are available for : Drip Icons, Elusive Icons, Feather, Foundation Icons, Glyphicons Halflings, Ionicons, LineAwesome, Material Icons, Open Iconic, Linea Icons.
+Related tutorial: http://wysiwygwebbuilder.com/iconfonts.html
+
+Structured Data (schema.org)
+- New feature: Added support for Structured Data (JSON-LD). Provide a better browsing experience for users on your website and in search engines, and improve
+ your SEO with the built-in JSON-LD generator.
+The following schemes are currently supported: Event, Review, Person, NewsArticle, SoftwareApplication, Product, Organization, Recipe, Restaurant, VideoObject, MusicAlbum, MusicPlaylist.
+
+Twitter Cards
+- New feature: Added support for Twitter Cards: Summary, Summary with large image and Player. Twitter specific meta tags can be configured in the Meta Tags section of the Page Properties. 
+
+Layout Grid
+- New feature: Added background overlay support to grid columns.
+- New feature: Added semantic HTML5 tag support.
+- New feature: Adding padding properties to columns. Padding is responsive.
+- New feature: Adding border properties to columns. This make it possible to configure border for each column. Border properties are responsive.
+- New feature: Added the ability to make layout grids full screen: Column height->100vh (100% of the viewport height).
+- New feature: Added support for 'CSS Grid Layout' (in addition to Bootstrap and Flexbox).
+
+Wizard
+- New feature: Added new 'Wizard' object. This implements a wizard like component, which can be used (for example) to create a multi-page form. The wizard can either be modal (popup) or used as a standard element.
+
+Site Search
+- Improved: Most search related code is now part of wb.sitesearch.min.js, this makes it possible to share the code between multiple page and results in a smaller footprint.
+- Improved: Results font-family now supports @font-face/Google Fonts.
+- New feature: Added 'Include all text in search index' option in Search Index settings. This will use all text from the page instead of just unique words. This will increase the size of the search index, but the search results will look better and it makes it possible to search for phrases.
+- New feature: Added the possibility to use quotes in the search queries to search for an exact phrase. Example: 'open source'. To make this useful, the option 'Include all text in search index' should be enabled!
+- New feature: Added the possibility to use the minus character before a word to exclude all results that include that word. Example: web -designer
+- New feature: Added 'Include timing' option. This displays the total time it took to execute the search query.
+- New feature: In addition to jQuery Dialog, you can now also display the results in a Bootstrap modal.
+- New feature: Added an option to set maximum number of characters to display in the results. The description text contains the context of the keyword within the text.
+- New feature: Added support for pagination.
+- New feature: Added item padding property. This specifies the padding between result items.
+- New feature: Added option to make search terms bold.
+- New feature: Added option to include the URL in search results. 
+Related tutorial: http://wysiwygwebbuilder.com/sitesearch.html
+
+Overlay Menu
+- New feature: Added new 'Overlay Menu' object. This implements a multi-level, responsive full screen menu. With 10 show/hide animations. social icons support.
+
+Tab Menu
+- New feature: Added responsive mode. When the viewport gets smaller than the specified breakpoint value, the Tab Menu will switch to stacked (vertical) mode so it can be also be used on smaller screens.
+
+Text Menu
+- New feature: Added responsive mode. This works in combination with Layout->Type->Responsive. When the viewport gets smaller than the specified breakpoint value, the Text Menu will switch from horizontal to vertical.
+
+Panel Menu
+- New feature: Added responsive mode.  When the viewport gets smaller than the specified breakpoint value, the Panel Menu will switch to full screen mode (with close button).
+- New feature: Added 'hamburger animations'. 12 different animations are available.
+- New feature: Added the possibility to add footer text. For example, to add a copyright message at the bottom of the menu.
+- New feature: Added the possibility to add a logo to the menu.
+- New feature: Added menu padding. This sets the padding around the entire menu.
+- New feature: Added support for 'Social Icons'. To add a social icon set the of the menu item and leave the 'text' field empty.
+- New feature: Added support for dividers. Set the text to '---' to insert a divider.
+
+Mega Menu
+- New feature: Added responsive mode. When the viewport gets smaller than the specified breakpoint value, the Mega Menu will display a hamburger icon to trigger a full screen menu.
+- New feature: Added 'Alignment' property. This adds the possibility to align the button inside the menu's container.
+- New feature: Added sub menu 'Alignment' property. Specifies the alignment of the text inside the sub menu.
+- New feature: Added sub menu 'Orientation' property. Specifies the orientation of the sub menu relatively to the button.
+
+CSS Menu:
+- New feature: Border styles of the main menu now support for individual sides.
+
+Other navigation:
+- Improved: You can now use <br> in menu text, which makes it possible to have multi-line text. Note that this mainly useful for menu items that do not have the same size like sub menu, panel/overlay menu items. 
+- New feature: Added 'Synchronize with another menu" option. Enabling this option will synchronize the links of the menu with the specified menu, This may be useful when you have multiple menus on the page, for example a desktop and mobile menu. So, you will have to change the link(s) only once.
+- New feature: Added 'Do not follow this link' option to links. Enabling this option adds 'rel=nofollow' to prevent robots/search engines following the link.
+
+Master Page/Master Frame.
+- New feature: Added support for background transparency (alpha) in Content Place Holder.
+- New feature: Added new master page functionality. In addition to Master Frame you can now also use another page as master page. This does not require a content place holder.
+Related tutorial: http://wysiwygwebbuilder.com/master_page.html
+
+General
+- Removed: Disable IE toolbar. IE no longer supports this feature.
+- Improved: All built-in JavaScript files are now loaded from the 'js' sub folder instead of embedded in the executable. This reduced the size of the application and memory usage. And it makes it easier to replace the files, if needed.
+- Improved: More objects now support ARIA role attributes. For example: tabs, accordion, search, blog, news feed ticker, navigation etc.
+- Improved: The 'margin' property is now responsive for most objects.
+- Improved: If a full width object has margin then the margin value will be subtracted from the total width using css's calc function so the object does not become wider than its container.
+- Improved: Removed browser prefixes for box-shadow.
+- Improved: HTML viewer has a better contrast for dark color schemes.
+- Improved: Many DPI improvements. For example, all built-in images/icons/toolbars now have high resolution versions for use on high DPI screens.
+- New feature: Added 'Set initial zoom level based on DPI scaling' option. On some computers with a high resolution (4k) display, the initial workspace may be to small. By enabling this option, the DPI value of your system will be used as the initial zoom level.
+- New feature: Added 'Default' accent color to color schemes. VS 2017 and Office 2016 color schemes may use Windows accent color now. 
+- New feature: Added 'Search' option to Site Manager to filter pages in the list and quickly find a page.
+- New feature: Added 'Search' option to Page selection dialog (for internal links) to quickly find a page.
+- New feature: Added 'Project backup in zip' option to File menu. This will create a full backup of the project and images etc.
+- New feature: Added 'Load built-in JavaScript files asynchronously' option in Tools->Options->HTML. Note: only useful when using external JavaScript file!
+- New feature: Added 'ctrl+click+drag' support to quickly duplicate objects just like in Word/PowerPoint: 
+  - select the object that you want to duplicate. 
+  - hover over the object with your mouse and press the CTRL key. 
+  - while still pressing the CTRL key, click and drag the object to the new location.
+
+Publish
+- New feature: Make a backup of the complete project (including images) in zip format.
+
+Templates/Blocks
+- Improved: Templates/Blocks are now stored more efficiently. If a project uses the same image multiple times then it wil be embedded only once.
+
+SVG
+- New feature: The application now officially supports SVG.
+
+Shape
+- New feature: Add ‘Full width’ mode to Shape, Text Art and Clip Art for use with SVG output mode. This makes it possible to have scalable/flexible shapes/text/clipart in layout grids.
+- Improved: Shapes in 'Insert Shape' gallery are now rendered larger and sharper, just like other 'Insert' galleries.
+
+Color picker
+- New feature: Added 'Alpha slider' to color picker.
+
+Font Awesome/Material Icons
+- New feature: Implemented a new icon selection window. With categories (just like in the Ribbon) and a search option, so you can quickly find the icon you are looking for.
+
+Page
+- New feature: Added 'Disable CSS media query' option to Page Properties. If this option is enabled, then breakpoints will not be published. This may be useful for testing purposes.
+- New feature: Added 'Disable HTML/CSS/JavsaScript formatting'. This option disables beautify/minify options for the current page. This may be useful for testing purposes or when you have added code to the page which does not support formatting.
+- New feature: Added 'Disable custom code'. If this option is enabled, then custom code with not be included in the published page. This way you can test the page without custom code (for example, in case something does not work).
+- New feature: Added 'Use Safari mobile background fix'. This option implements a workaround for issues with full width (parallax/fixed/cover) background images on Safari mobile (iOS) browsers.
+- New feature: Added 'Apply these breakpoints to other page' in Manage breakpoints. This option applies the breakpoints to other pages (if they do not already exist). Note that this does not affect the layout.
+
+Text
+- New feature: Added 'ID' property in Advanced section of Link properties. This makes it possible to create bookmarks to links. Related tutorial: How to create bookmarks in Text? + style => no-pointer!
+- New feature: Added 'Font Family' and 'Font Size' to property dialog and Property Grid. This can be used to set the font of the text object when using responsive fonts.
+- New feature: Added 'Recently Used Fonts' to the font dropdown list in the Ribbon and Format toolbar.
+
+Blog / Article
+- Improved: Added the ability to change the editor color. This can be useful if you are using white text.
+- New feature: Added 'bootstrap' layout template.
+- New feature: Added 'clean' layout template. 
+- New feature: Added 'testimonial' layout template. 
+- New feature: Added ‘quote’ layout template. 
+
+News Feed Ticker
+- New feature: Added support for background transparency (alpha).
+- New feature: Added border radius option.
+
+Ready-to-use-JavaScript
+- Improved: Google Maps scripts now display a preview image in the workspace (instead of the generic JavaScript logo).
+- Improved: Text scripts now show a preview of the text in the workspace.
+- Improved: Added support for Google Fonts.
+- Improved: Added support for Global Replace (fonts and colors)
+- New feature: Added ‘Countdown Days’ script. 
+- New feature: Added ‘Typewriter’ and ‘Typewriter Deluxe’ scripts. The typewriter scripts simulate typing text. Typewriter Deluxe also includes a cursor and reverse mode
+
+Style Manager
+- Improved: The Style Manager window is now resizable.
+- Improved: pseudo classes are no longer displayed in the style selection list, because it is only useful to select the main class anyway.
+- Improved: 'Import' and 'Advanced' parser updated. It now recognizes rgba() values, animations, transitions, cursors, border-radius and more.
+- Improved: Enabled 'predefined style' for Heading, Bullets, Layout grid, Flex Container, Rollover Layer.
+- New feature: Most objects now have a 'class' property in the Property Inspector. This adds the ability (for advanced users) to set the classname (style) for any object. This may be useful for third party Content Management Systems like CushyCMS or SurealCMS.
+- New feature: Border styles now support for individual sides.
+- New feature: Added support for background gradients in styles.
+- New feature: Added support for the 'cursor' property. This specifies the type of cursor to be displayed when pointing on an element.
+- New feature: Added support for the 'background-clip' property. This specifies the painting area of the background. This can be useful in combination with transparent borders. 
+'border-box' clips the background to the border box. When using a transparent border, the background will be visible behind the border. 'padding-box' clips the background to the padding box (excluding the border). The background behind the border will be transparent.
+
+CSS3 Animations
+- Improved: When using onscrollreveal events with css animate (css), then the target object will be initially hidden automatically (via class 'visibility-hidden'). This behavior can be overwritten by adding $SCROLLREVEAL_AUTOHIDE$ -> false to the user defined variables.
+- New feature: Added animations preview.
+- New feature: Added support for ‘filter’ property in transitions and CSS animations. This adds the possibility to animate brightness, contrast, hue, blur, invert, saturate, grayscale and sepia!
+- New feature: Added 'Neon' text animation.
+- New feature: Added 'Fire' text animation.
+- New feature: Added 'Classic Movie' text animation.
+- New feature: Added 'transform-wobble-top', ‘transform-wobble-center’ and ‘transform-wobble-bottom’ animations.
+- New feature: Added several text letterspacing animations. For example: ‘letterspacing focus in’ and ‘letterspacing expand’.
+Plus, more than 25 other new animations, including: animate-border-fade, background position, focus-in / focus-out, jello, ken-burns, pop, push, shadow-top-bottom / shadow-left-right, slide-in-elliptic/ slide-out-elliptic, text-popup, transform diagonal and many others.
+
+Flexbox:
+- New feature: Added 'background image+overlay' support to Flex Container.
+- New feature: Flexbox properties (flex grow, flex shrink, align self, flex basis) of objects are now responsive, so you can use different values in breakpoints.
+
+Photo Gallery/Photo Collage
+- New feature: When loading new images, the gallery will automatically use the meta data of the image (if available).
+- New feature: Added the ability to set a separate 'Thumbnail' image. This allows you to use a different (smaller) version of the image for thumbnails. It is also still possible to automatically generate a thumbnail image.
+This can be useful for example if you want a use a square image for the preview and the full sized image with normal aspect ratio.
+- New feature: Added support for Bootstrap modal in jQuery Dialog settings. This implements a responsive modal popup.
+- New feature: Added the ability to get images from a folder on the server. If the images contain description meta data then this will automatically be used for the title.
+
+Slideshow
+- New feature: When loading new images, the gallery will automatically use the meta data of the image (if available).
+- New feature: Added 'Line' shape option to pagination, inspired by Bootstrap-4 Carousel indicators.
+- New feature: Added new built-in navigation arrows, inspired by Bootstrap-4 Carousel arrows. To use the new arrows, enter '<' for previous and '>' for next in the filename fields.
+- New feature: Added ‘Maximum width’ property which limits the width of the slide show when used in full width (floating) mode. In previous versions this was fixed to 1920.
+- New feature: Added the ability to get images from a folder on the server.
+- New feature: Added ‘Full screen background’ slideshow mode. The images will cover the entire viewport. The slideshow will be fixed at the background, so it will not scroll with the rest of the content. Full screen background uses CSS3 animations, no JavaScript.
+
+Image / Picture
+- New feature: Added ‘Object-fit’ property. Specifies how the image should be resized to fit its container. Requires a modern browser! For example, Internet Explorer does not support this property! https://caniuse.com/#feat=object-fit
+
+Progressbar
+- New feature: Added the ability to show percentages in the progressbar.
+
+Dialog
+- New feature: Added border width property.
+- New feature: Added box-shadow properties.
+- New feature: Added animation duration and easing properties.
+- New feature: Added 'Bootstrap' mode. This will use Bootstrap's modal instead of jQuery UI.
+- New feature: Added the ability to use the dialog as a form (Properties->Form->Enable Form).
+- New feature: Added floating mode. When this option is enabled objects inside the dialog float instead of having a fixed position, so you can create flexible layouts.
+- New feature: Added 'Breakpoint' property. When the viewport gets smaller than the specified breakpoint value, the dialog will switch to full width mode. For use with floating mode!
+- New feature: Added 'Buttons' properties. Buttons will be added at the bottom of the dialog and can be used to close the dialog or trigger other actions (events). This feature replaces the previous hardcoded button options.
+- New feature: Added 'Button alignment' and 'Button margin' properties. These specify the alignment and margins of the buttons in the footer of dialog.
+- New feature: Added the ability to customize the style of the buttons.
+
+Tabs
+- New feature: Added show and hide animations. This animates showing/hiding the panels.
+- New feature: Added the possibility to add a description and icon (fontawesome/material icon) to tabs.
+- New feature: Added support for vertical tabs: Tabs at the left and Tabs at the right.
+- New feature: Added the ability to use the Tabs object as a form (Properties->Form->Enable Form).
+
+Accordion
+- New feature: Added the ability to use the accordion as a form (Properties->Form->Enable Form).
+
+Themable Button (previous known as jQueryButton)
+- New feature: Added box-shadow property.
+- New feature: Added the ability to set the button(s) full width in Layout grid. This may be useful (for example) to create flexible (radio) button rows.
+
+Spinner
+- New feature: Added box-shadow property.
+
+Events
+- New feature: Added 'Form Submit' and 'Form Reset' actions to events. These actions can be used to submit or reset a form through events! For example, to submit a form via a button that is not part of the form.
+- New feature: Added 'ondocumentready' to page events. This event is will be triggered once the page Document Object Model (DOM) is ready for JavaScript code to execute. This can be useful for example, to apply a style to an object. 
+
+Scroll Events and Transitions
+- New feature: Added 'Disable scroll events on small screens' to the Page Properties. This option adds the ability to disable scroll events on small screens (eg. phones). 
+- New feature: Added 'Disable scroll transitions on small screens' to the Page Properties. This option adds the ability to disable scroll transitions on small screens (eg. phones). 
+'Minimum width' specifies the width at which the scroll events/ transitions will be disabled.
+- New feature: Added 'Exclude browsers' to the Page Properties. This option adds the ability to disable scroll events and transitions on specific browsers (eg. iOS, Android).
+
+Signup/Edit Profile
+- New feature: Added the ability for the user to set an avatar image. The image can be displayed on the page with the "Login Name' object.
+
+Login Name
+- New feature: Added border, background, padding, vertical alignment properties.
+- New feature: Added 'Display Avatar' option. This will display the avatar of the logged in user.
+
+Login Tools
+- New feature: Added support for background and border transparency (alpha).
+- New feature: Added 'User Roles' functionality. Users roles are used to create different types of users. These users will only have access to the pages that have configure this role. The roles are customizable in the properties of the Login admin.
+
+Login Admin
+- New feature: Redesigned the layout of the Login Admin for a modern look and feel.
+- New feature: Added styling options for button and input fields.
+- New feature: Added support for striped and hover rows.
+- New feature: Added the ability to customize/translate the text of the various items (headers, buttons)
+- New feature: Added table cell padding 
+- New feature: Added search/filter option
+- New feature: Added pagination.
+- New feature: Added 'avatar' support (see 'Signup/Edit Profile).
+
+Borders
+- Improved: Borders are now rendered with all properties (style, radius, individual borders) in the workspace.
+- New feature: Added support for transparent borders (alpha).
+
+Background
+- New Feature: Added support for Google Maps background rendering. You can now use a (static) Google Map image as background in most objects. 
+For example: https://maps.googleapis.com/maps/api/staticmap?center=New+York,NY&zoom=12&size=440x330
+- Improved: Background mode -> image now displays the color picker to select the color for image + color and image + overlay.
+- New feature: Added ‘image+fade’ option in background properties. This will add a fading gradient overlay effect to the background. 
+
+Box Shadow
+- New feature: Added support for shadow type: inset. This changes the shadow from an outer shadow (outset) to an inner shadow.
+
+Carousel
+- New feature: Added 'Line' shape option to pagination, inspired by Bootstrap-4 Carousel indicators.
+- New feature: Added new built-in navigation arrows, inspired by Bootstrap-4 Carousel arrows. To use the new arrows, enter '<' for previous and '>' for next in the filename fields.
+- New feature: Added 'Flexible' mode. When this option is selected the child elements of the Carousel will be floating (instead of fixed). In this case the Carousel will be fully responsive and it can also be used inside layout grids. In 'Flexible mode' the Carousel can also be set to use the full height of the viewport.
+
+Layer
+- New feature: Added 'breakpoint' property to Panel Layer. When the viewport is smaller than the specified breakpoint value, the panel layer will become full width.
+
+CMS Admin
+- Improved: WWB editor has new icons.
+- New feature: Added styling options for button and input fields. All plug-ins have been updated to support the new styling.
+- New feature: Added support for hover rows.
+- New feature: Added table cell padding 
+
+ListView
+- New feature: Added the possibility to add images to dividers.
+
+Property Inspector
+- New feature: The Property Inspector will display a 'Responsive' icon, if the property has different values in breakpoints. 
+- New feature: Added 'Reset Property (RWD)'. This will reset the selected value, so will be the same across all breakpoints.
+- New feature: Added 'Reset All Properties (RWD)'. This will reset all responsive values of the object.
+- New feature: Added commands section with shortcuts to 'More properties', Events, HTML and Animations.
+
+Global Replace
+- New feature: Added the ability to replace internal links.
+
+Error Reports
+- New feature: Error Reports displays a warning when a style does not have the same breakpoints as the page. If you are using styles in responsive pages then these styles should have the same breakpoints. 
+- New feature: Error Reports displays a warning when an event refers to an object that is no longer on the page: Invalid event target
+
+Form Conditions
+- New feature: Added 'Less than' and 'Greater than' conditions. It is also possible to create a range (greater than/less than combined).
+- New feature: Added 'else' conditions. This can be used in combination with 'equal to', 'not equal to', 'greater than' and 'less than'.
+
+Form
+- New feature: Added 'From' property to built-in form processor settings. This will set the 'from' address of email sent messages to the specified email address. If you leave the field empty then it will work like in previous versions: either the 'email' input will be used (if it exists) or the 'to' address.
+- New feature: Added 'Set envelope-from address for PHP mail() with the -f option' in form properties (Form Properties->Advanced->Miscellaneous). This replaces the PHP7 option in page properties. It serves the same purpose.
+- New feature: Added server sided input validation (Form Properties->Advanced->Miscellaneous). This adds extra security to the form by also validating the input on the server side (using PHP). This feature uses the same settings as the JavaScript (client side) validation.
+
+Editbox / Textarea
+- New feature: Added the possibility to set the color of the placeholder text.
+
+Lightboxes
+- Improved: Lightbox preview image now automatically keeps aspect ratio of the image.
+- New feature: Added the possibility to use fancybox v3. Due to license restrictions we are not allowed to distribute fancybox v3. However if you copy the files from https://fancyapps.com/fancybox/3/ to Documents\WYSIWYG Web Builder\system\lightbox\fancybox, then application will use these files instead of the included ones (fancybox v1).
+- New feature: Added support for 3 new (third party) responsive lightboxes: lightcase, tosrus, venobox. Available in 'Free extras'
+- New feature: The lightbox (in Page Properties) now supports : colorbox, lightcase, prettyphoto, swipebox, tosrus, venobox. These lightboxes can be used for YouTube, Vimeo, HTML5 video, Inline frames and links.
+- New feature: Added the ability to add a border (style, color, width, radius) to the lightbox preview image in YouTube, Vimeo and HTML5 video.
+
+User defined variables
+- New feature: Added $PROJECT_CSS$ system variable. This makes it possible to specify a different name for the global (external) style sheet, instead of using the project name. 
+
+25 new templates
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_books.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_candy.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_corporate.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_dividers.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_fakenews.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_flowers.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_fruitmosaic.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_landingpage.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_newspaper.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_pencil.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_portal.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_resume.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_reveal.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_settings.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_snowworld.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_wordgrid.html
+
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic1.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic2.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic3.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic4.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic5.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic6.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic7.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic8.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic9.html
+http://www.wysiwygwebbuilder.com/support/wb14tryouts/wb14_basic10.html
+
+Blocks
+50 new blocks, including: feature blocks, cards, headers/footers, forms, photo gallery, carousels, count down/wait for it..., intros and many more
+
+05/11/2018 - Version 14.0.1
+- Fixed: Missing 'width' in Bulleted List.
+- Fixed: Rendering issue with zoomed workspace.
+- Fixed: Conflict with external scripts and schema.org JSON
+- Fixed: 'Find not found' error with some extensions.
+- Fixed: Implemented workaround for Layout grids with maximum width, so they use 'old' behavior automatically. See the help for more details.
+- Fixed: Login Admin produces demo code:(
+- Fixed: Issue with user roles in Login Admin 
+- Fixed: Single character glyphs in Icon Fonts do not render.
+- Fixed: Using global lightbox causes filename warning in Error Reports.
+- Improved: SVG output for Material Icons.
+- Improved: During the setup, blocks/icons will no longer be installed in the user's document folder. Because when the setup is executed with different credentials, the files ended up in the wrong folder. 
+- Improved: Added support for Unicode files names in zip backup.
+- Improved: class property does not disable object's CSS output.
+- New feature: Added 'trigger change' action to Form Conditions. When you set the value of another object via conditions, then browsers will not trigger a change event for that object. This action adds the ability to force a change event, which may be useful if the value is used in other conditions.
+
+05/16/2018 - Version 14.0.2
+- Fixed: Login Admin code missing semicolon when using avatars.
+- Fixed: Issue with Material Icons json file.
+- Fixed: Ctrl+Click does not work for Tables and Carousel.
+- Fixed: Folder should not be included in Twitter Card URL.
+- Improved: Added 'User role' property to Login Signup form. This specifies the default user role for new users.
+- Improved: Added keyboard shortcut support to search input fields of the Object Manager, Site Manager and Toolbox.
+
+05/19/2018 - Version 14.0.x (hotfix)
+- Fixed: Login Admin Action icon's not showing
+- Fixed: Issue with jQuery Mobile Panel corner property.
+- Fixed: Issue with jQuery Mobile Header/Footer text color.
+- Fixed: Incorrect date styling in blog templates bootstrap and testimonial. 
+- Fixed: Some styles are not saved for jQuery UI widgets when using breakpoints.
+- Improved: Removed YouTube's ugly border.
